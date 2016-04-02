@@ -15,12 +15,14 @@ html
     ])
     
     header.py2.flex.flex-wrap.items-center
-      div.header-wrap.clearfix.flex-auto
-        div.sm-col.md-col-8.right-align.m2.md-m0
-          h1.m0 Nakano<br class="md-hide lg-hide"> Computer Club
+      div.md-flex.flex-wrap.items-center.header-wrap
+        div.col-8.right-align.mx-auto
+          h1.m0 Nakano#[br.md-hide.lg-hide] Computer Club
           p.h3.mt1.mb1 NCC
-        div.sm-col.md-col-4
-          p.mx2
+        div.col-4.mx-auto
+          p.mx2.xs-hide.sm-hide
+            img(src="http://kauntah.herokuapp.com/counter?offset=0")
+          p.mx2.md-hide.lg-hide.center
             img(src="http://kauntah.herokuapp.com/counter?offset=0")
     
     div.px1.sm-px3.lg-px4.wrap

@@ -3,7 +3,7 @@ include ./_navi.jade
 doctype html
 html
   +head({
-    title: "NCC: Nakano Computer Club",
+    title: "NCC : Nakano Computer Club",
     url: "http://post-internet.github.io/",
     description: "中野を中心に活動するコンピューティングサークル Nakano Computer Club (NCC) のWebサイトです。",
     author: "Nakano Computer Club"
@@ -16,42 +16,44 @@ html
     
     header.py2.flex.flex-wrap.items-center
       div.md-flex.flex-wrap.items-center.header-wrap
-        div.col-8.right-align.mx-auto
+        div.col-10.md-col-8.right-align.mx-auto
           h1.m0 Nakano#[br.md-hide.lg-hide] Computer Club
           p.h3.mt1.mb1 NCC
-        div.col-4.mx-auto
+        div.col-10.md-col-4.mx-auto
           p.mx2.xs-hide.sm-hide
             img(src="http://kauntah.herokuapp.com/counter?offset=0")
           p.mx2.md-hide.lg-hide.center
             img(src="http://kauntah.herokuapp.com/counter?offset=0")
     
-    div.px1.sm-px3.lg-px4.wrap
-      section.hook.py2
-        h2 コンピュータでなんかしてる人が自然と集まるサークル
-      div.contents.clearfix
-        section.sm-col.col-12.sm-col-6
-          h2 NCCとは?
-          p.px1
-            | NCCとはNakano Computer Clubの略で、2015年に設立されました。
-            | 何かを作ること自体そのものが目的ではなく、メンバーが躓いた時や何かを始めたい時、
-            | すぐに詳しい人に出会える場の提供を目的にサークル運営を行っています。
-          p.px1
-            | そのため、サークルが個人に対して活動を強いることはありません。
-            | 基本的な活動はオンライン上のチャット(Slack)がメインですが、LT大会や合宿、
-            | その他イベント等オフラインの活動も数ヶ月に一度行われています。
-        section.sm-col.col-12.sm-col-6
-          h2 NCCの主な行事
-          ul.px0.ml3
-            li 4月~5月: 新入生歓迎会(2016年度は応募を忘れたので開催失敗)
-            li 8月~9月: 夏合宿、コミックマーケット(夏)
-            li 12月: コミックマーケット(冬)
-            li 2月~3月: 春合宿
-        section.sm-col.col-12
-          h2 NCCに参加する
-          p.px1
-            | NCCに興味がありますか? Twitterもしくはメールで連絡してください。<br>
-            | メール: mactkg [at] gmail.com (取り急ぎ個人のメールです)<br>
-            | #[a(href="https://twitter.com/intent/tweet?text=%40meiji_ncc%20NCC%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%E3%81%A7%E6%A1%88%E5%86%85%E3%82%92%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84!%20[%E3%81%93%E3%81%93%E3%81%AB%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%99%E3%81%A6%E3%81%8D%E3%81%AA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88]") Twitterで連絡する]
-      footer.mx-auto.py2
-        | // presented by Nakano Computer Club
+    main.py2.p0.md-p3.lg-p3.md-flex.flex-wrap.justify-between
+      section.col-10.mx-auto.md-m0.lg-m0
+        h2
+          | #[span.nowrap コンピュータで] <wbr>
+          | #[span.nowrap なんかしてる人が] <wbr>
+          | #[span.nowrap 自然と集まるサークル]
+      section.col-10.md-col-6.mx-auto.md-m0.lg-m0
+        h2 NCCとは?
+        p.px1
+          | NCCとはNakano Computer Clubの略で、2015年に設立されました。
+          | 何かを作ること自体そのものが目的ではなく、メンバーが躓いた時や何かを始めたい時、
+          | すぐに詳しい人に出会える場の提供を目的にサークル運営を行っています。
+        p.px1
+          | そのため、サークルが個人に対して活動を強いることはありません。
+          | 基本的な活動はオンライン上のチャット(Slack)がメインですが、LT大会や合宿、
+          | その他イベント等オフラインの活動も数ヶ月に一度行われています。
+      section.col-10.md-col-6.mx-auto.md-m0.lg-m0
+        h2 NCCの主な行事
+        ul.px0.ml3
+          li 4月~5月: 新入生歓迎会(2016年度は応募を忘れたので開催失敗)
+          li 8月~9月: 夏合宿、コミックマーケット(夏)
+          li 12月: コミックマーケット(冬)
+          li 2月~3月: 春合宿
+      section.col-10.md-col-6.mx-auto.md-m0.lg-m0
+        h2 NCCに参加する
+        p.px1
+          | NCCに興味がありますか? Twitterもしくはメールで連絡してください。<br>
+          | メール: mactkg [at] gmail.com (取り急ぎ個人のメールです)<br>
+          | #[a(href="https://twitter.com/intent/tweet?text=%40meiji_ncc%20NCC%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%E3%81%A7%E6%A1%88%E5%86%85%E3%82%92%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84!%20[%E3%81%93%E3%81%93%E3%81%AB%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%99%E3%81%A6%E3%81%8D%E3%81%AA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88]") Twitterで連絡する]
+    footer.mx2.py2
+      | // presented by Nakano Computer Club
     script(src="bundle.js", charset="utf-8")

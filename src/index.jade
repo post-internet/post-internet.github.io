@@ -1,5 +1,6 @@
 include ./_head.jade
 include ./_navi.jade
+include ./_content-box.jade
 doctype html
 html
   +head({
@@ -20,19 +21,20 @@ html
           h1.m0 Nakano#[br.md-hide.lg-hide] Computer Club
           p.h3.mt1.mb1 NCC
         div.col-10.md-col-4.mx-auto
+          //- no centering
           p.mx2.xs-hide.sm-hide
             img(src="http://kauntah.herokuapp.com/counter?offset=0")
+          //- centering
           p.mx2.md-hide.lg-hide.center
             img(src="http://kauntah.herokuapp.com/counter?offset=0")
     
-    main.py2.p0.md-p3.lg-p3.md-flex.flex-wrap.justify-between
-      section.col-10.mx-auto.md-m0.lg-m0
+    +main()
+      +main-header()
         h2
           | #[span.nowrap コンピュータで] <wbr>
           | #[span.nowrap なんかしてる人が] <wbr>
           | #[span.nowrap 自然と集まるサークル]
-      section.col-10.md-col-6.mx-auto.md-m0.lg-m0
-        h2 NCCとは?
+      +main-box("NCCとは?")
         p.px1
           | NCCとはNakano Computer Clubの略で、2015年に設立されました。
           | 何かを作ること自体そのものが目的ではなく、メンバーが躓いた時や何かを始めたい時、
@@ -41,15 +43,13 @@ html
           | そのため、サークルが個人に対して活動を強いることはありません。
           | 基本的な活動はオンライン上のチャット(Slack)がメインですが、LT大会や合宿、
           | その他イベント等オフラインの活動も数ヶ月に一度行われています。
-      section.col-10.md-col-6.mx-auto.md-m0.lg-m0
-        h2 NCCの主な行事
+      +main-box("NCCの主な行事")
         ul.px0.ml3
           li 4月~5月: 新入生歓迎会(2016年度は応募を忘れたので開催失敗)
           li 8月~9月: 夏合宿、コミックマーケット(夏)
           li 12月: コミックマーケット(冬)
           li 2月~3月: 春合宿
-      section.col-10.md-col-6.mx-auto.md-m0.lg-m0
-        h2 NCCに参加する
+      +main-box("NCCに参加する")
         p.px1
           | NCCに興味がありますか? Twitterもしくはメールで連絡してください。<br>
           | メール: mactkg [at] gmail.com (取り急ぎ個人のメールです)<br>

@@ -1,0 +1,4 @@
+mixin navi(links)
+  nav.m0.px3.flex.flex-wrap.justify-end
+    each link in links
+      p.px1.nav-link #[a(href="#{link.href}") #{link.text}]

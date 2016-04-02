@@ -1,4 +1,5 @@
 include ./_head.jade
+include ./_navi.jade
 doctype html
 html
   +head({
@@ -8,6 +9,13 @@ html
     author: "Nakano Computer Club"
   })
   body
+    +navi([
+      { text: "Home", href: "#" },
+      { text: "Test", href: "#" },
+      { text: "Menu", href: "#" },
+      { text: "Menu", href: "#" },
+    ])
+    
     div.px3.lg-px4.wrap
       header.py2
         h1.m0 NCC

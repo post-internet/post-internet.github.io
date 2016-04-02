@@ -1,0 +1,11 @@
+mixin head(prop)
+  head
+    meta(charset="utf-8")
+    title #{prop.title}
+    meta(property="og:title", content="#{prop.title}")
+    meta(property="og:type", content="website")
+    meta(property="og:url", content="#{prop.url}")
+    meta(property="og:description",
+      content="#{prop.description}")
+    meta(property="og:author", content="#{prop.author}")
+    meta(name="viewport", content="width=device-width,initial-scale=1")

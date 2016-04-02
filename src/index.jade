@@ -1,0 +1,33 @@
+include ./_head.jade
+doctype html
+html
+  +head({
+    title: "NCC: Nakano Computer Club",
+    url: "http://post-internet.github.io/",
+    description: "中野を中心に活動するコンピューティングサークル Nakano Computer Club (NCC) のWebサイトです。",
+    author: "Nakano Computer Club"
+  })
+  body
+    div.px3.lg-px4.wrap
+      header.py2
+        h1.m0 NCC
+        p.h3.mt1.mb1 Nakano Computer Club
+      section.hook.py2
+        h2.h1 何か一言どうぞ
+      div.contents.flex.flex-wrap
+        section.col-6
+          h2 NCCとは?
+          p
+            | 説明文を書く，はてなブログやGitHubのリンクもここでする
+        section.col-6
+          h2 NCCの主な行事
+          p
+            | 行事をリスト表示
+        section.col-12
+          h2 NCCに参加する
+          p
+            | 参加にあたっての注意事項や手順を記述する
+          p#[a(href="#") フォームへのリンク]
+    footer.mx-auto.py2
+      | footer
+    script(src="bundle.js", charset="utf-8")

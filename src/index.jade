@@ -10,37 +10,46 @@ html
   })
   body
     +navi([
-      { text: "Home", href: "#" },
-      { text: "Test", href: "#" },
-      { text: "Menu", href: "#" },
-      { text: "Menu", href: "#" },
+      { text: "Twitter", href: "https://twitter.com/meiji_ncc" },
+      { text: "Blog", href: "http://ncc.hateblo.jp/" }
     ])
     
     header.py2.flex.flex-wrap.items-center
-      div.col-8.right-align
-        h1.m0 Nakano Computer Club
-        p.h3.mt1.mb1 NCC
-      div.col-4
-        p.mx2
-          img(src="http://kauntah.herokuapp.com/counter?offset=0")
+      div.header-wrap.clearfix.flex-auto
+        div.sm-col.md-col-8.right-align.m2.md-m0
+          h1.m0 Nakano<br class="md-hide lg-hide"> Computer Club
+          p.h3.mt1.mb1 NCC
+        div.sm-col.md-col-4
+          p.mx2
+            img(src="http://kauntah.herokuapp.com/counter?offset=0")
     
-    div.px3.lg-px4.wrap
+    div.px1.sm-px3.lg-px4.wrap
       section.hook.py2
-        h2.h1 何か一言どうぞ
-      div.contents.flex.flex-wrap
-        section.col-6
+        h2 コンピュータでなんかしてる人が自然と集まるサークル
+      div.contents.clearfix
+        section.sm-col.col-12.sm-col-6
           h2 NCCとは?
-          p
-            | 説明文を書く，はてなブログやGitHubのリンクもここでする
-        section.col-6
+          p.px1
+            | NCCとはNakano Computer Clubの略で、2015年に設立されました。
+            | 何かを作ること自体そのものが目的ではなく、メンバーが躓いた時や何かを始めたい時、
+            | すぐに詳しい人に出会える場の提供を目的にサークル運営を行っています。
+          p.px1
+            | そのため、サークルが個人に対して活動を強いることはありません。
+            | 基本的な活動はオンライン上のチャット(Slack)がメインですが、LT大会や合宿、
+            | その他イベント等オフラインの活動も数ヶ月に一度行われています。
+        section.sm-col.col-12.sm-col-6
           h2 NCCの主な行事
-          p
-            | 行事をリスト表示
-        section.col-12
+          ul.px0.ml3
+            li 4月~5月: 新入生歓迎会(2016年度は応募を忘れたので開催失敗)
+            li 8月~9月: 夏合宿、コミックマーケット(夏)
+            li 12月: コミックマーケット(冬)
+            li 2月~3月: 春合宿
+        section.sm-col.col-12
           h2 NCCに参加する
-          p
-            | 参加にあたっての注意事項や手順を記述する
-          p#[a(href="#") フォームへのリンク]
+          p.px1
+            | NCCに興味がありますか? Twitterもしくはメールで連絡してください．<br>
+            | メール: mactkg [at] gmail.com (取り急ぎ個人のメールです)<br>
+            | #[a(href="https://twitter.com/intent/tweet?text=%40meiji_ncc%20NCC%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%E3%81%A7%E6%A1%88%E5%86%85%E3%82%92%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84!%20[%E3%81%93%E3%81%93%E3%81%AB%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%99%E3%81%A6%E3%81%8D%E3%81%AA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88]") Twitterで連絡する]
       footer.mx-auto.py2
         | footer
     script(src="bundle.js", charset="utf-8")

@@ -1,3 +1,4 @@
+var webpack = require('webpack')
 var BrowserSync = require('browser-sync-webpack-plugin')
 var precss = require('precss')
 var autoprefixer = require('autoprefixer')
@@ -10,6 +11,7 @@ module.exports = {
     path: __dirname,
     filename: 'bundle.js'
   },
+  devtool: '#source-map',
   module: {
     loaders: [
       {

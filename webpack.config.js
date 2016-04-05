@@ -33,6 +33,11 @@ module.exports = {
     return [atImport, nesting, precss, autoprefixer]
   },
   plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    }),
     new BrowserSync({
       host: 'localhost',
       port: 3000,

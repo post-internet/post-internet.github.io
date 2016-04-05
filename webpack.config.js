@@ -35,7 +35,7 @@ module.exports = {
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['./'] },
-      files: ["./index.html"]
+      files: [ "./index.html", "./style.css" ]
     })
   ]
 }

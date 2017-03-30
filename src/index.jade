@@ -15,7 +15,7 @@ html
       { text: "Twitter", href: "https://twitter.com/meiji_ncc" },
       { text: "Blog", href: "http://ncc.hateblo.jp/" }
     ])
-    
+
     header.py2.flex.flex-wrap.items-center
       div.md-flex.flex-wrap.items-center.header-wrap
         div.col-10.md-col-8.right-align.mx-auto
@@ -24,13 +24,11 @@ html
         div.col-10.md-col-4.mx-auto
           //- no centering
           p.mx2.xs-hide.sm-hide
-            a(href="//kauntah.meiji-ncc.tech", target="_blank")
-              img(src="//kauntah.meiji-ncc.tech/counter?offset=0")
+            img(src="//kauntah-svg.mybluemix.net/counter.svg", height="100")
           //- centering
           p.mx2.md-hide.lg-hide.center
-            a(href="//kauntah.meiji-ncc.tech", target="_blank")
-              img(src="//kauntah.meiji-ncc.tech/counter?offset=0")
-    
+            img(src="//kauntah-svg.mybluemix.net/counter.svg", height="100")
+
     +main()
       +main-header()
         h2
@@ -70,19 +68,19 @@ html
         h3 おおきめなイベント
         ul.px0.ml3
           li 新入生歓迎会（4月ごろ）
-          ul
-            li （2016年度は応募忘れで不参加）
+          //- ul
+          //-   li （2016年度は応募忘れで不参加）
           li 夏合宿（8月ごろ）・春合宿（3月ごろ）
-          li コミックマーケット出展（8月・12月）
+          li 過去には コミックマーケット出展（8月・12月）
           ul
-            li その他、技術系同人イベント
-            li O'Creilly 名義（#[a(href="http://ocreilly.meiji-ncc.tech") 参考]）
+            //- li その他、技術系同人イベント
+            li NCC 発 技術系サークル O'CREILLY （#[a(href="http://ocreilly.meiji-ncc.tech") 参考]）
       +main-box("NCCに参加する")
         div.px1.md-mr3.lg-mr3
           p.m0.p0 NCCに興味がありますか？
           p.m0.p0 Twitter もしくはメールで連絡してください。
           p.m0.p0 メール: info [at] meiji-ncc.tech
-          p.m0.p0 
+          p.m0.p0
             a(href="https://twitter.com/intent/tweet?text=%40meiji_ncc%20NCC%E3%81%AB%E8%88%88%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%E3%81%A7%E6%A1%88%E5%86%85%E3%82%92%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84!%20[%E3%81%93%E3%81%93%E3%81%AB%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%81%99%E3%81%A6%E3%81%8D%E3%81%AA%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88]")
               | > Twitterで連絡する
     footer.mx2.py2

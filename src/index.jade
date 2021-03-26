@@ -7,7 +7,8 @@ html
     title: "NCC : Nakano Computer Club",
     url: "https://meiji-ncc.tech/",
     description: "中野を中心に活動するコンピューティングサークル Nakano Computer Club (NCC) のWebサイトです。",
-    author: "Nakano Computer Club"
+    author: "Nakano Computer Club",
+    favicon: "./assets/favicon.ico"
   })
     link(rel="stylesheet", href="./style.css")
   body
@@ -17,7 +18,7 @@ html
     ])
 
     header.py2.flex.flex-wrap.items-center
-      div.md-flex.flex-wrap.items-center.header-wrap
+      div.md-flex.flex-wrap.items-center.header-wrap.overflow-scroll
         div.col-10.md-col-8.right-align.mx-auto
           h1.m0 Nakano#[br.md-hide.lg-hide] Computer Club
           p.h3.mt1.mb1 NCC
@@ -53,8 +54,10 @@ html
           p.m0.p0 サークルが個人に対して活動を強いることはありません。
           //- | 基本的な活動はオンライン上のチャット(Slack)がメインですが、LT大会や合宿、
           //- | その他イベント等オフラインの活動も数ヶ月に一度行われています。
-          p.m0.p0 基本的な活動はオンライン上のチャット (Slack) がメインです。
-          p.m0.p0 他にも、LT大会や合宿などのイベントも数ヶ月に1度行われています。
+          p.m0.p0 
+            | 基本的な活動はオンライン上のチャット (Slack) がメインです。
+          p.m0.p0 
+            | 他にも、LT大会や合宿などのイベントも数ヶ月に1度行われています。
       +main-box("NCCの主な行事")
         h3 定期的なイベント
         ul.px0.ml3

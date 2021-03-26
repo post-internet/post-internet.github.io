@@ -1,6 +1,6 @@
 mixin navi(links)
-  nav.m0.px1.sm-px3.flex.flex-wrap.justify-end
+  div.navbar.m0.px1.sm-px3.flex.flex-wrap.justify-end
     each link in links
-      p.mx1.py1.nav-link
+      p.mx1.py1.nav-link.left-align
         a(href="#{link.href}") #{link.text}
         span.nav-link-bottom

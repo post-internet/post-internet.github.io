@@ -10,4 +10,5 @@ mixin head(prop)
       content="#{prop.description}")
     meta(property="og:author", content="#{prop.author}")
     meta(name="viewport", content="width=device-width,initial-scale=1")
+    link(rel="icon", href="#{prop.favicon}")
     block

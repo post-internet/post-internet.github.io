@@ -18,12 +18,15 @@
 
 $black: #2F3448;
 $blue: #6699A6;
-$white: #FAF4EF;
+$white: #FAF4EF; /** equals rgba(250, 244, 239);*/
 $orange: #F23827;
 $red: #A60A0A;
 
 body {
-  background-color: $white;
+  /* background-color: $white; */
+  background-image:url("./assets/icon-512x512.png");
+  background-color:rgba(250, 244, 239, 0.8);
+  background-blend-mode:lighten;
   color: $black;
   font-family:
     游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
@@ -68,7 +71,6 @@ header {
 
 main {
   line-height: 1.75em;
-
   h2 {
     line-height: 1.5em;
   }

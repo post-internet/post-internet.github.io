@@ -59,8 +59,6 @@ body {
 header {
   height: 28rem;
   background-color: $blue;
-  -ms-overflow-style: none;    /* IE, Edge 対応 */
-  scrollbar-width: none;       /* Firefox 対応 */
 
   .header-wrap {
     width: 100%;
@@ -70,8 +68,14 @@ header {
     font-size: 3rem;
   }
 }
-header::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+
+.scroll-bar-display-none{
+  -ms-overflow-style: none !important;    /* IE, Edge 対応 */
+  scrollbar-width: none !important;       /* Firefox 対応 */
+}
+.scroll-bar-display-none::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   display:none;
+  width: 0 !important;
 }
 
 main {

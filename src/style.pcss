@@ -69,6 +69,14 @@ header {
   }
 }
 
+.scroll-bar-display-none{
+  -ms-overflow-style: none !important;    /* IE, Edge 対応 */
+  scrollbar-width: none !important;       /* Firefox 対応 */
+}
+.scroll-bar-display-none::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  width: 0 !important;
+}
+
 main {
   line-height: 1.75em;
   h2 {
